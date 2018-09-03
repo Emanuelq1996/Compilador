@@ -34,7 +34,6 @@ public class Analizador_Lexico {
     }
 
     private void CargarEquivalentes() {
-        equivalentes.put("Error", -1);
         equivalentes.put("Numero", 0);
         equivalentes.put("Letra", 1);
         equivalentes.put("F", 2);
@@ -55,8 +54,12 @@ public class Analizador_Lexico {
         if ((c >= 48) && (c < 57)) {//Es un digito?
             return equivalentes.get("Numero");
         }
-        if (((c >= 48) && (c <= 57)) || ((c >= 97) && (c <= 122))) {//Es una letra?
+        if (((c >= 65) && (c <= 69)) || ((c >= 71) && (c <= 90)) || ((c >= 97) && (c <= 122))) {//Es una letra? (distinta de Fk)
             return equivalentes.get("Letra");
+        }
+        // espacio|| tab  || salto de linea
+        if((c==32)||(c==9)||(c==10)){
+        	return equivalentes.get("BTS");
         }
         String caracter = "";
         caracter += c;//La clave es un string del caracter que recibo
@@ -66,80 +69,3 @@ public class Analizador_Lexico {
         return indice;//Si es un caracter valido
     }
 }
-/*import java.io.File;
-
-import java.io.IOException;
-import java.util.HashMap;
-
-public class Analizador_Lexico {
-    private HashMap<String, Integer> equivalentes = null;
-    private MatrizLexica MLexica = null;
-    private HashMap<String, Integer> tablaSimbolos;
-    private int cantLN = 0;
-    private String fuente = null;
-    private static final int ESTADO_FINAL=6;
-    private static final int Max = 25;
-    private int cursor;
-    public Analizador_Lexico(File mFile) throws IOException {
-        //CargarMatriz(mFile);
-        CargarEquivalentes();
-        cantLN=0;
-		fuente=FileManager.Read(mFile);
-		int cursor=0;
-    }
-
-	public String GetToken() {// Hay que revisarla y testearla
-        String buffer="";
-        int estadoActual=0;
-        while( (estadoActual!=9999)&&(estadoActual!=1) ){//OBVIAMENTE NO VA 9999 
-        	char c=fuente.charAt(cursor);
-        	int columna=this.Equivalente(c); //A partir del caracter indica que columna de la matriz debo posicionarme
-        	int estadoFuturo=MLexica.GetEstado(estadoActual, columna);
-        	MLexica.GetAS(estadoActual, columna).Ejecutar(buffer,c);//Se ejecuta la accion semantica correspondiente
-        	
-        }
-        return buffer;
-    }
-
-    private void CargarMatriz(File mFile) throws IOException {//METODO OBSOLETO??? no se si sirve para algo guardar la matriz en memoria secundaria y sacarla de ahi si puede quedar guardada en el ejecutable y no cambia nunca
-        //Las dos primeras lineas del archivo contienen el alto y el ancho de la matriz
-        String input = FileManager.Read(mFile);
-        String[] tamM = input.split("\n", 2);
-        MLexica = new MatrizLexica(Integer.parseInt(tamM[0]), Integer.parseInt(tamM[1]));
-        //Elimino esas dos primeras lineas
-        input = input.substring(input.indexOf('\n') + 1);
-        input = input.substring(input.indexOf('\n') + 1);
-        MLexica.AddAll(input);
-    }
-
-    private void CargarEquivalentes(){ 
-        equivalentes.put("Numero",0);
-        equivalentes.put("Letra",1);
-        //equivalentes.put("",,);
-        
-     
-        //TODO completar la hash
-    }
-
-    private int Equivalente(char c) {//Devuelve el indice (correspondiente al caracter) de la matriz lexica
-        if((c>=48)&&(c<57)){//Es un digito?
-        	return equivalentes.get("Numero");
-        }
-        if( ( (c>=48)&&(c<=57))||((c>=97)&&(c<=122)) ){//Es una letra?
-        	return equivalentes.get("Letra");
-        }
-        String caracter="";
-        caracter+=c;//La clave es un string del caracter que recibo
-        Integer indice=equivalentes.get(caracter);
-        if (indice==null)
-        	return -1;//Si el caracter no existe en el lenguaje
-        return indice;//Si es un caracter valido
-    }
-    public static void main(String [] args){
-    	
-    		
-    	
-    }
-}
-*/
-
