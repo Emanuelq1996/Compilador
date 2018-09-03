@@ -1,10 +1,10 @@
 
-public class AccionSemantica3 implements AccionSemantica{
 
-	@Override
-	public void Ejecutar(String buffer,char c){
-		// TODO Auto-generated method stub
-		
+public class AccionSemantica3 {
+//Elimina comentario
+	
+	public void Ejecutar(String buffer, char c){
+		buffer="";
 	}
 
 }

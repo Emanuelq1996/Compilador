@@ -6,7 +6,7 @@ public class Analizador_Lexico {
     private static final int MAX = 25;
     private static final int ESTADO_FINAL = 6;
 
-    private HashMap<String, Integer> tablaSimbolos = null;
+    public static HashMap<String, Integer> tablaSimbolos = null;
     private HashMap<String, Integer> equivalentes = null;
     private MatrizLexica MLexica = null;
     private int cantLN = 0;
@@ -19,6 +19,7 @@ public class Analizador_Lexico {
         MLexica = new MatrizLexica();
         CargarEquivalentes();
         fuente = FileManager.Read(mFile);
+        tablaSimbolos= new HashMap<>();
     }
 
     public String GetToken() {// Hay que revisarla y testearla
