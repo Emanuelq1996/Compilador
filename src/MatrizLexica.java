@@ -1,22 +1,22 @@
-//#define a (new AccionSemantica)
-//#define c (new CasillaLexica(a)
+#define a (new AccionSemantica)
+#define c (new CasillaLexica(a)
 
 public class MatrizLexica {
 
-   private static final int cantEstados = 10;//cambiar
-   private static final int cantCaracteres = 10;//cambiar
+   private static final int cantEstados = ;//cambiar
+   private static final int cantCaracteres = ;//cambiar
 
     private CasillaLexica[][] MatrizCL = null;
 
     public MatrizLexica() {
-        //MatrizCL = new CasillaLexica[cantEstados][cantCaracteres];
+        MatrizCL = new CasillaLexica[cantEstados][cantCaracteres];
         ConstruirMatriz();
     }
 
     private void ConstruirMatriz() {
         int i = 0;
-        //CasillaLexica[] filaLexica = new CasillaLexica[cantCaracteres];
-/*
+        CasillaLexica[] filaLexica = new CasillaLexica[cantCaracteres];
+
         filaLexica = {.....} //FALTA PONER LA FILA DE LA MATRIZ
         AddFila(filaLexica, i++);
         filaLexica = {.....}
