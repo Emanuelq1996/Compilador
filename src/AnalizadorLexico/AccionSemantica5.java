@@ -1,4 +1,4 @@
-package AccionesSemanticas;
+package AnalizadorLexico;
 
 public class AccionSemantica5 extends AccionSemantica{
 	//ES PARA CONSTANTES ENTEROS LARGOS SIN SIGNO
@@ -7,10 +7,10 @@ public class AccionSemantica5 extends AccionSemantica{
 		
 		public void Ejecutar(String buffer, char c){
 			if ((Integer.parseInt(buffer) <= 4294967295) && (Integer.parseInt(buffer)>=0))
-				tablaSimbolos.add("uslinteger");				
+				Analizador_Lexico.tablaSimbolos.add("uslinteger");
 			 else 	
 			 	buffer = "4294967295";
-			 	tablaSimbolos.add(buffer,nuevoSimbolo);
+			Analizador_Lexico.tablaSimbolos.add(buffer,nuevoSimbolo);
 			 	System.out.print("Warning: Se excedio del rango permitido, se procede a realizar tecnica de reemplazo");
 		 }
 

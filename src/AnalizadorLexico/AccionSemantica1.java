@@ -1,4 +1,4 @@
-package AccionesSemanticas;
+package AnalizadorLexico;
 
 public class AccionSemantica1 extends AccionSemantica{
 //CONCATENA

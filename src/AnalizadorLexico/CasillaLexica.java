@@ -1,4 +1,6 @@
-import AccionesSemanticas.AccionSemantica;
+package AnalizadorLexico;
+
+import AnalizadorLexico.AccionSemantica;
 
 public class CasillaLexica {
     public AccionSemantica AS = null;

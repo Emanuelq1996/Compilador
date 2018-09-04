@@ -1,4 +1,4 @@
-package AccionesSemanticas;
+package AnalizadorLexico;
 
 public class AccionSemantica3 extends AccionSemantica{
 //Elimina comentario
