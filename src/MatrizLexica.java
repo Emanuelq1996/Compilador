@@ -1,7 +1,7 @@
 #define a (new AccionSemantica)
 #define c (new CasillaLexica(a)
 
-public class MatrizLexica {
+public class MatrizLexica { //COMENTARIO DE MATRIZ LEXICA
 
    private static final int cantEstados = ;//cambiar
    private static final int cantCaracteres = ;//cambiar
