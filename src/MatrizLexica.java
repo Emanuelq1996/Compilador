@@ -17,25 +17,25 @@ public class MatrizLexica {
         AccionSemantica[] AS = {null, new AccionSemantica1(), new AccionSemantica2(), new AccionSemantica3(), new AccionSemantica4(), new AccionSemantica5(), new AccionSemantica6(), new AccionSemantica7(), new AccionSemantica8()};
         CasillaLexica[] filaLexica;
 
-        /*0*/filaLexica = new CasillaLexica[]{c(AS[1], 3), c(AS[1], 11), null, c(AS[1], 1), c(AS[1], 4), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1), c(AS[1], 7), c(AS[1], 8), c(AS[1], 9), c(AS[1], 10), c(AS[3], 0), c(AS[1], 1), c(AS[1], 16), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1)};
+        /*0*/filaLexica = new CasillaLexica[]{c(AS[1], 3), c(AS[1], 11), null, c(AS[1], 1), c(AS[1], 4), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1), c(AS[1], 7), c(AS[1], 8), c(AS[1], 9), c(AS[1], 10), c(AS[3], 0), c(AS[1], 1), c(AS[1], 16), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1), c(AS[8], -1),c(AS[1], 12)};
         AddFila(filaLexica, i++);
 
         /*1*/filaLexica = new CasillaLexica[]{c(AS[1], 2), c(AS[1], 2), null, c(AS[1], 13), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null};
         AddFila(filaLexica, i++);
 
-        /*2*/filaLexica = {.....}
+        /*2*/filaLexica = new CasillaLexica[]{c(AS[1], 2), c(AS[1], 2), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS["ALGO"], 14), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1), c(AS[4], -1),c(AS[4], -1)};
         AddFila(filaLexica, i++);
 
-        /*3*/filaLexica = {.....}
+        /*3*/filaLexica = new CasillaLexica[]{c(AS[1], 3), c(AS[2], -1), c(AS[2], -1), c("ALGO"), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[2], 14), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[1], 15), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1), c(AS[2], -1),c(AS[2], -1)};
         AddFila(filaLexica, i++);
 
-        /*4*/filaLexica = {.....}
+        /*4*/filaLexica =  new CasillaLexica[]{c(AS[7], -1), c(AS[7], -1), null, null, c(AS[1], 5), c(AS[1], 5), null, null, null, null, null, null, null, null, null, null, null, null, null, null};
         AddFila(filaLexica, i++);
 
-        /*5*/filaLexica = {.....}
+        /*5*/filaLexica = new CasillaLexica[]{c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 6), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5),c(AS[1], 5)};
         AddFila(filaLexica, i++);
 
-        /*6*/filaLexica = {.....}
+        /*6*/filaLexica = new CasillaLexica[]{c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[3], 0), c(AS[1], 6), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5), c(AS[1], 5),c(AS[1], 5)};
         AddFila(filaLexica, i++);
 
         /*7*/filaLexica = new CasillaLexica[]{c(AS[7], -1), c(AS[7], -1), null, null, null, null, null, null, null, null, c(AS[7], -1), null, null, null, null, null, null, null, null, null};
