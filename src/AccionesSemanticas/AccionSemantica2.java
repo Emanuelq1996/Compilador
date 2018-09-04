@@ -1,6 +1,6 @@
 package AccionesSemanticas;
 
-public class AccionSemantica2 {
+public class AccionSemantica2 extends AccionSemantica{
 //CHEQUEA RANGO CONSTANTE Y AGREGA A TABLA DE SIMBOLOS, SI SE VA DE RANGO REEMPLAZA CON EL MAYOR DEL RANGO
 	//PIDE DEVOLVER EL PAR <ID,PTR>
 	

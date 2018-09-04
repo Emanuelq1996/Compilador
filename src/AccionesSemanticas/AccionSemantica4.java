@@ -1,6 +1,6 @@
 package AccionesSemanticas;
 
-public class AccionSemantica4 {
+public class AccionSemantica4 extends AccionSemantica{
 	//PIDE DEVOLVER EL PAR <ID,PTR>
 	
 	public void Ejecutar(String buffer, char c){

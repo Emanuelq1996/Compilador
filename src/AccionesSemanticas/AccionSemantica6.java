@@ -1,6 +1,6 @@
 package AccionesSemanticas;
 
-public class AccionSemantica6 {
+public class AccionSemantica6 extends AccionSemantica{
 	//ES PARA CONSTANTES ENTEROS LARGOS SIN SIGNO
 	//CHEQUEA RANGO CONSTANTE Y AGREGA A TABLA DE SIMBOLOS, SI SE VA DE RANGO REEMPLAZA CON EL MAYOR DEL RANGO
 		//PIDE DEVOLVER EL PAR <ID,PTR>

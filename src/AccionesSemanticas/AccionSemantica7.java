@@ -1,6 +1,6 @@
 package AccionesSemanticas;
 
-public class AccionSemantica7 {
+public class AccionSemantica7 extends AccionSemantica{
 	//AGREGA EN LA TABLA DE SIMBOLOS SIN VERIFICAR EL <25
 
 	public void Ejecutar(String buffer, char c){

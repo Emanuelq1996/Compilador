@@ -1,6 +1,6 @@
 package AccionesSemanticas;
 
-public class AccionSemantica8 {
+public class AccionSemantica8 extends AccionSemantica{
 	// CONCATENA Y AGREGA EN LA TABLA DE SIMBOLOS DE UNA, ES PARA TOKENS QUE PASAN DIRECTO AL ESTADO FINAL
 
 	public void Ejecutar(String buffer, char c){

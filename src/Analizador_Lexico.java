@@ -3,8 +3,8 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class Analizador_Lexico {
-    private static final int MAX = 25;
-    private static final int ESTADO_FINAL = 6;
+    private final int MAX = 25;
+    private final int ESTADO_FINAL = 6;
 
     public static HashMap<String, Integer> tablaSimbolos = null;
     private HashMap<String, Integer> equivalentes = null;
@@ -48,6 +48,13 @@ public class Analizador_Lexico {
         equivalentes.put("=", 10);
         equivalentes.put("!", 11);
         equivalentes.put("BTS", 12);
+        equivalentes.put("'", 13);
+        equivalentes.put(".", 14);
+        equivalentes.put("{", 15);
+        equivalentes.put("}", 16);
+        equivalentes.put("(", 17);
+        equivalentes.put(")", 18);
+        equivalentes.put(":", 19);
     }
 
 
