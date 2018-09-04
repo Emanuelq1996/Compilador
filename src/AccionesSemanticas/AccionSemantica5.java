@@ -1,4 +1,4 @@
-
+package AccionesSemanticas;
 
 public class AccionSemantica5 {
 	//ES PARA CONSTANTES ENTEROS LARGOS SIN SIGNO

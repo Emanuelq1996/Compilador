@@ -1,3 +1,5 @@
+package AccionesSemanticas;
+
 public class AccionSemantica7 {
 	//AGREGA EN LA TABLA DE SIMBOLOS SIN VERIFICAR EL <25
 

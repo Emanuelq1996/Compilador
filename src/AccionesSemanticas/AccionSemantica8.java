@@ -1,3 +1,5 @@
+package AccionesSemanticas;
+
 public class AccionSemantica8 {
 	// CONCATENA Y AGREGA EN LA TABLA DE SIMBOLOS DE UNA, ES PARA TOKENS QUE PASAN DIRECTO AL ESTADO FINAL
 

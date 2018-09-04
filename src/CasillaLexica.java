@@ -1,3 +1,5 @@
+import AccionesSemanticas.AccionSemantica;
+
 public class CasillaLexica {
     public AccionSemantica AS = null;
     public int estado = 0;

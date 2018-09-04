@@ -1,7 +1,7 @@
-#define a (new AccionSemantica)
+import AccionesSemanticas.AccionSemantica;#define a (new AccionSemantica)
 #define c (new CasillaLexica(a)
 
-public class MatrizLexica { //COMENTARIO DE MATRIZ LEXICA
+public class MatrizLexica {
 
    private static final int cantEstados = ;//cambiar
    private static final int cantCaracteres = ;//cambiar
@@ -36,7 +36,7 @@ public class MatrizLexica { //COMENTARIO DE MATRIZ LEXICA
         filaLexica = {.....}
         AddFila(filaLexica, i++);
         filaLexica = {.....}
-        AddFila(filaLexica, i++);*/
+        AddFila(filaLexica, i++);
     }
 
     private void AddFila(CasillaLexica[] valores, int fila) {

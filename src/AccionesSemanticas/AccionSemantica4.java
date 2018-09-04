@@ -1,8 +1,9 @@
+package AccionesSemanticas;
 
 public class AccionSemantica4 {
 	//PIDE DEVOLVER EL PAR <ID,PTR>
 	
-	public void Ejecutar(String buffer, char c){	//COMENTARIO DE AS$
+	public void Ejecutar(String buffer, char c){
 		if(buffer.length()<25){
 			if(tablaSimbolos.contains(buffer)){
 				// RETURN tablaSimbolos.get(buffer);
